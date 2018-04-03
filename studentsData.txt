@@ -1,9 +1,0 @@
-First	Last	GPA	ID		Email
-Dennis	Jordan	4.0	887222987	djordan@pierce.edu
-Judy	Riley	3.8	888999567	jriley@pierce.edu
-Peter	Ramos	3.6	880760288	pramos@pierce.edu
-Dixie	Reed	4.0	880209765	dreed@pierce.edu
-Blake	Young	3.8	887567114	byoung095@pierce.edu
-Marianna	Vincent	3.4	886777056	mvincent@pierce.edu
-Agripina	Lewandowski	3.9	884563223	alewandowski@pierce.edu
-Mariam	Mccutcheon	3.7	885774209	mmccutcheon@pierce.edu
