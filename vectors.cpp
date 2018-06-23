@@ -1,4 +1,4 @@
-#include <iostream>
+      #include <iostream>
 #include <vector>
 
 using namespace std;
@@ -14,25 +14,32 @@ void insert(vector<double> & values,int value ,int pos);
 int main() {
   vector<double> v1 = {1,2,3,4,5};
   printDoub(v1);
-  cout << "Sum function ----------" << endl;
+  cout << "Sum function\n"
+       << "_______________________________" << endl;
   double total = sum(v1);
   cout << "Total : " << total << endl;
-  cout << "Multiply function ----------" << endl;
+  cout << "Multiply function\n" 
+       << "_______________________________" << endl;
   multiply(v1, 2);
   printDoub(v1);
-  cout << "Factoring function ----------" << endl;
+  cout << "Factoring function\n" 
+       << "_______________________________" << endl;
   printInt(squares(5));
-  cout << "Remove at position function ----------" << endl;
+  cout << "Remove at position function\n" 
+       << "_______________________________" << endl;
   remove(v1, 1);
   printDoub(v1);
-  cout << "Insert at position function ----------" << endl;
+  cout << "Insert at position function\n"
+       << "_______________________________" << endl;
   insert(v1,888, 3);
   printDoub(v1); 
+  cout << "Copy Vector\n"
+       << "_______________________________" << endl;
 
-
-
-
- 
+  vector<int> v2 = {9,8,7,6,5,4,3};
+  vector<int> v2Copy;
+  v2Copy = v2;
+  printInt(v2Copy);
   return 0;
 }
 
@@ -84,3 +91,4 @@ void printInt(const vector<int>& values){
   }
 
 };
+
