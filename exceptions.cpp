@@ -26,6 +26,18 @@ class Test {
   }
 };
 
+void twoWrongs(){
+  bool error1Detected = true;
+  bool error2Detected = true;
+
+  if(error1Detected){
+    throw bad_alloc();
+  }
+  if(error2Detected) {
+    throw exception();
+  }
+}
+
 int main() {
   try
   {
@@ -49,6 +61,22 @@ int main() {
   catch (int num)
   {
     cout << "Error code : " << num << endl;
+  }
+  
+  
+   try
+  {
+    twoWrongs();
+  }
+  // polymorphism guarantees that we can use a subclass wherever a parent class is expected.
+  catch(bad_alloc &e)
+  {
+    cout << "Bad alloc : " << e.what() << endl;
+
+  }
+  catch(exception &e)
+  {
+    cout << "Exception : " << e.what() << endl;
   }
 
 }
